@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            border:2px solid black;
+            border: none;
+            height:550px;
+            width: 1250px;
+            background-image: url("https://images.unsplash.com/photo-1413708617479-50918bc877eb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdhZGdldHxlbnwwfHwwfHx8MA%3D%3D");
+            background-repeat: no-repeat;
+            background-size: 1500px;
+        }
+        .box1{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: 2px solid black;
+            border: none;
+            height: 500px;
+            width: 780px;
+        }
+        .box1 img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: slide 12s infinite;
+        }
+        .box1 img:nth-child(1){
+            animation-delay: 0s;
+        }
+        .box1 img:nth-child(2){
+            animation-delay: 4s;
+        }
+        .box1 img:nth-child(3){
+            animation-delay: 8s;
+        }
+        @keyframes slide {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        .box2{
+            position: absolute;
+            top: 20px;
+            left: 800px;
+            border: 2px solid black;
+            border: none;
+            height: 500px;
+            width: 400px;
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+        #login{
+            text-align: center;
+            font-size: 40px;
+            color:blue;
+        }
+        .re{
+            position: relative;
+            left: 30px;
+        }
+        #Email{
+            position: relative;
+            left: 20px;
+            top: 40px;
+        }
+        input{
+            width: 300px;
+            height: 30px;
+            border: 2px solid;
+            border-radius:5px;
+        }
+        #Password{
+            position: relative;
+            top: 70px;
+            left: 20px;
+        }
+        #fp{
+            display: block;
+        }
+        #b1{
+            position: relative;
+            top: 100px;
+            left: 20px;
+            width: 350px;
+            height: 30px;
+            background-color: blue;
+            color: white;
+        }
+        #more{
+            position: relative;
+            top: 110px;
+            text-align: center;
+            color: white;
+        }
+        #h1{
+            position: relative;
+            top: 120px;
+            left: 20px;
+            width: 100px;
+        }
+        #h2{
+            position: relative;
+            top: 100.70px;
+            left: 270px;
+            width: 100px;
+        }
+        #b2{
+            position: relative;
+            top: 140px;
+            left: 20px;
+            width: 150px;
+            height: 50px;
+            color: gold;
+            background-color: white;
+            border: 2px solid red;
+            border-radius: 50px;
+        }
+        #b3{
+            position: relative;
+            top: 140px;
+            left: 60px;
+            width: 150px;
+            height: 50px;
+            color: blue;
+            background-color: white;
+            border: 2px solid red;
+            border-radius: 50px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">
+            <img src="https://media.istockphoto.com/id/996783416/photo/username-and-password-login-screen.webp?a=1&b=1&s=612x612&w=0&k=20&c=0Frvk6hfgk_-G_X98_I6nM8b6KTiY5RnJQ5ejzgG50o=" id="i1">
+            <img src="https://media.istockphoto.com/id/1205116274/photo/login-web-form.webp?a=1&b=1&s=612x612&w=0&k=20&c=tZsc3_KmQH_Nsvzb51IVzwSt73W3irt64AKQeouyj0U=" id="i2">
+            <img src="https://media.istockphoto.com/id/1287170933/photo/enter-login-and-password-internet-connection-and-cyber-protection.webp?a=1&b=1&s=612x612&w=0&k=20&c=GihucTInmx-6nQXLTuni28oJn987Iow8_5kWt2uBEdw=" id="i3">
+        </div>
+        <div class="box2">
+            <h3 id="login">Login</h3>
+            <p class="re">Doesn't have an account yet? <a href="">Sign Up</a></p>
+            <span id="Email">
+                <h4 id="ea">Email Address:</h4>
+                <input type="text" placeholder="you@example.com">
+            </span>
+            <span id="Password">
+                <h4 id="pass">Email Address:</h4>
+                <input type="text" placeholder="Enter 6 character or more">
+                <a href="" id="fp">Forgot Password?</a>
+            </span>
+            <span class="b1"> <button id="b1">Login</button></span>
+            <span class="more"><hr id="h1"><h5 id="more">Or Sign Up with</h5><hr id="h2"></span>
+            <span class="b2"><button id="b2"><i class="fa-brands fa-google"></i> <a href="https://www.google.com/">Google</a></button></span>
+            <span class="b3"><button id="b3"><i class="fa-brands fa-facebook"></i> <a href="">Facebook</a></button></span>
+        </div>
+    </div>
+</body>
+</html>
